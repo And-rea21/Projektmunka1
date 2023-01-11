@@ -12,12 +12,12 @@ background-size:cover;
 nav
 {
 
-text-align: center;
+
 margin: auto;
-margin-top: 50px;
-margin-bottom: 50px;
-border-top-left-radius: 50px;
-border-bottom-right-radius: 50px;
+margin-top: 5px;
+margin-bottom: 5px;
+border-top-left-radius: 5px;
+border-bottom-right-radius: 5px;
 }
 
 h1{
