@@ -1,7 +1,7 @@
 body
 {
-  font-family: sans-serif;
-  background-color: antiquewhite; 
+font-family: sans-serif;
+background-color: antiquewhite; 
 background-image:url("/IMG/pexels-karl-solano-2883049.jpg");
 background-repeat: no-repeat;
 background-size:cover;
@@ -9,10 +9,18 @@ background-size:cover;
 
 }
 
+<<<<<<< HEAD
+nav{
+font-size: xx-large;
+color: rgb(169, 221, 204);
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+=======
 nav
 {
 
 
+>>>>>>> 4aa49e2669d9f89043b7bd4211a6664bbc45a45a
 margin: auto;
 margin-top: 5px;
 margin-bottom: 5px;
