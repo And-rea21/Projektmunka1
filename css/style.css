@@ -2,17 +2,17 @@ body
 {
   font-family: sans-serif;
   background-color: antiquewhite; 
-background-image:url("/IMG/pexels-pixabay-533157.jpg");
+background-image:url("/IMG/pexels-karl-solano-2883049.jpg");
 background-repeat: no-repeat;
-background-size:auto;
+background-size:cover;
 
 
 }
 
-#leira
+nav
 {
-background-image: url('fatyol.png');
-width: 880px;
+
+text-align: center;
 margin: auto;
 margin-top: 50px;
 margin-bottom: 50px;
