@@ -1,16 +1,16 @@
-body{
+body
+{
   font-family: sans-serif;
   background-color: antiquewhite; 
 background-image:url("/IMG/pexels-pixabay-533157.jpg");
-background-image:image-set(auto);
-<style>
-img {width: 100%;
-      height: auto;}
-</style>
+background-repeat: no-repeat;
+background-size:auto;
+
 
 }
 
-#leiras{
+#leira
+{
 background-image: url('fatyol.png');
 width: 880px;
 margin: auto;
@@ -22,6 +22,7 @@ border-bottom-right-radius: 50px;
 
 h1{
 color: indigo;
+text-align: center;
 font-variant: small-caps;
 text-shadow: 1px 1px white;
 }
