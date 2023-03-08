@@ -54,22 +54,26 @@ overflow: hidden;
 box-shadow: 10px 10px 10px gray;  
 }
 
-.kepkeret img{
+.kepkeret img
+{
 width: 385px;
 position: relative;
 left: -5px;
 }
 
 
-a{
+a
+{
 text-decoration: none;
 font-family: sans-serif;
 font-style: inherit;
 color: black;
 }
-#logo{
+
+#logo
+{
     font-weight: 700;
-    margin-top: 50px;
+    margin-top: 25px;
     font-family: ;
 }
 
