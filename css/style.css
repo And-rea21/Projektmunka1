@@ -145,4 +145,8 @@ footer {
         background-color: DarkSalmon;
         color: white;
       }
+
+.carousel .item {
+                 height: 100px;
+                }
     
