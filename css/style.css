@@ -3,11 +3,8 @@ head
     background-image: url("../IMG/pexels-mark-mccammon-2724749.jpg") ;
 }
 
-
-
 body
 {
-font-family: sans-serif;
 background-color: antiquewhite; 
 background-image: lenght: 100% , height:auto ;
 background-repeat: no-repeat;
@@ -16,22 +13,15 @@ background-size:auto;
 
 }
 
-nav
-{
-
-font-style::oblique;
-margin:auto;
-margin-top: 5px;
-margin-bottom: 5px;
-border-top-left-radius: 5px;
-border-bottom-right-radius: 5px;
-}
-
 h1{
 color: indigo;
 text-align: center;
 font-variant: small-caps;
 text-shadow: 1px 1px white;
+}
+
+h2{
+  font-family: 'Times New Roman', Times, serif;
 }
 
 p{
@@ -72,29 +62,17 @@ color: black;
 
 #logo
 {
-    font-weight: 700;
-    margin-top: 25px;
-    font-family: ;
+    margin-top: 50px;
+    font-style: italic;
+    font-size: 50px;
 }
-
-     
-
-    
- body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-    
-#navbar {
-        overflow: hidden;
-        background-color: #f1f1f1;
-        padding: 10px 10px;
-        transition: 0.4s;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 99;
-      }
+.img-fluid{
+  max-width: 15%;
+  max-height: auto;
+}
+.img-thumbnail{
+  border: 1px;
+}
     
 #navbar a {
         float: left;
@@ -102,9 +80,10 @@ color: black;
         text-align: center;
         padding: 12px;
         text-decoration: none;
-        font-size: 18px;
+        font-size:40px;
         line-height: 25px;
         border-radius: 4px;
+        font-family: "Qwigley", serif;
       }
     
 #navbar #logo {
@@ -119,7 +98,7 @@ color: black;
       }
     
 #navbar a.active {
-        background-color: dodgerblue;
+        background-color: rgb(218,165,0);
         color: white;
       }
     
@@ -146,11 +125,9 @@ color: black;
 footer {
         text-align: center;
         padding: 3px;
-        background-color: DarkSalmon;
+        background-color: rgb(149, 52, 19);
         color: white;
       }
 
-.carousel .item {
-                 height: 100px;
-                }
+          
     
