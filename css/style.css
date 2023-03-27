@@ -21,14 +21,21 @@ text-shadow: 1px 1px white;
 }
 
 h2{
-  font-family: 'Times New Roman', Times, serif;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+h3{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  font-weight: bold;
+
 }
 
 p{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 text-indent: 35px;
-text-align: center;
 letter-spacing: -0.1px;
-line-height: 150%;
+line-height: 120%;
 }
 
 .kepkeret {
@@ -55,7 +62,7 @@ left: -5px;
 a
 {
 text-decoration: none;
-font-family: sans-serif;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-style: inherit;
 color: black;
 }
@@ -80,14 +87,14 @@ color: black;
         text-align: center;
         padding: 12px;
         text-decoration: none;
-        font-size:40px;
+        font-size:20px;
         line-height: 25px;
         border-radius: 4px;
-        font-family: "Qwigley", serif;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       }
     
 #navbar #logo {
-        font-size: 50px;
+        font-size: 40px;
         font-weight: bold;
         transition: 0.4s;
       }
@@ -128,6 +135,20 @@ footer {
         background-color: rgb(149, 52, 19);
         color: white;
       }
+.col,half,.third,.twothird,.threequarter,.quarter {
+  float:left;width:100%
+}
+.row-padding,.row-padding>.half,.row-padding>.third,.row-padding>.twothird,.row-padding>.threequarter,.row-padding>.quarter,.row-padding>.col {
+  padding:0 8px
+}
 
-          
-    
+@media (min-width:601px){.col.m1{width:8.33333%}.col.m2{width:16.66666%}.col.m3,.quarter{width:24.99999%}.col.m4,.third{width:33.33333%}
+
+#team {
+  background-color: rgba(199, 165, 165, 0.589);
+  
+}
+.table{
+text-align: center;
+-ms-grid-column-align: stretch;
+}
