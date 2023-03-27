@@ -1,23 +1,13 @@
 <!DOCTYPE html>
 <html lang="hu">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>AnRóta - Bútorda</title>
     
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <!-- Google Fonts Roboto -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Qwigley|Ephesis"
-    />
     <!-- MDB -->
-    <link rel="stylesheet" href="/mdb/css/mdb.min.css" />
+    <link rel="stylesheet" href="/mdb/css/mdb.min.css">
     <link rel="stylesheet" href="css/style.css">
 
   </head>
@@ -36,78 +26,115 @@
         <a href="kapcsolat.html">Kapcsolat</a>
       </div>
     </div>
-    
-
-   
-
-    <!-- Carousel wrapper -->
-<div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
-  <!-- Indicators -->
-  <div class="carousel-indicators">
-    <button
-      type="button"
-      data-mdb-target="#carouselBasicExample"
-      data-mdb-slide-to="0"
-      class="active"
-      aria-current="true"
-      aria-label="Slide 1"
-    ></button>
-    <button
-      type="button"
-      data-mdb-target="#carouselBasicExample"
-      data-mdb-slide-to="1"
-      aria-label="Slide 2"
-    ></button>
-    <button
-      type="button"
-      data-mdb-target="#carouselBasicExample"
-      data-mdb-slide-to="2"
-      aria-label="Slide 3"
-    ></button>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: rgba(179, 183, 183, 0.789);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    text-align: center;
+  }
+  .content {
+    margin: 10% auto;
+    padding: 0;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    height: 300px;
+    width: 600px;
+    overflow: hidden;
+    border: 1px saddlebrown solid;
+    box-shadow: 20px hsl(0, 0%, 3%);
+    z-index: -1;
+  }
+  .show {
+    padding: 10%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    width: fit-content;
+  }
+  
+  .slide_content {
+    float: left;
+    width: 600px;
+    height: 300px;
+  }
+  .slides {
+    width: 2400px;
+    -webkit-animation-name: slide;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    /* -webkit-animation-direction: alternate; */
+    -webkit-animation-play-state: running;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slide_content:nth-child(1) {
+    background: rgb(247, 173, 210);
+    z-index: 1;
+  }
+  
+  .slide_content:nth-child(2) {
+    background: hsl(108, 100%, 88%);
+  }
+  
+  .slide_content:nth-child(3) {
+    background: rgb(226, 192, 192);
+  }
+  
+  .slide_content:nth-child(4) {
+    background: rgb(236, 236, 149);
+  }
+  
+  @keyframes slide {
+    20% {
+      margin-left: 0px;
+    }
+  
+    40% {
+      margin-left: calc(-400px * 1);
+    }
+  
+    60% {
+      margin-left: calc(-400px * 2);
+    }
+  
+    80% {
+      margin-left: calc(-400px * 3);
+    }
+  }
+</style>
+<div class="container">
+  <div class="slides">
+    <div class="slide_content 1">
+    <img src="/IMG/pexels-karl-solano-2883049.jpg" class="d-block w-100" alt="a">
+    </div>
+    <div class="slide_content 2">
+    <img src="/IMG/pexels-lisa-fotios-1957478.jpg" class="d-block w-100" alt="b" />
+    </div>
+    <div class="slide_content 3">
+    <img src="/IMG/pexels-mark-mccammon-2724749.jpg" class="d-block w-100" alt="c"/>
+    </div>
+    <div class="slide_content 4">
+    <img src="/IMG/pexels-photomix-company-94865.jpg" class="d-block w-100" alt="c"/>
+    </div>
+    <div class="slide_content 5">
+      <img src="/IMG/pexels-saviesa-home-2089696.jpg" class="d-block w-100" alt="c"/>
+      </div>
   </div>
+</div><br>
+<br>
+<br>
+<br>
+<br>
 
-  <!-- Inner -->
-  <div class="carousel-inner">
-    <!-- Single item -->
-    <div class="carousel-item active">
-      <img src="/IMG/pexels-karl-solano-2883049.jpg" class="d-block w-100 " alt="a"/>
-      <div class="carousel-caption d-none d-sm-block">
-      </div>
-    </div>
-
-    <!-- Single item -->
-    <div class="carousel-item">
-      <img src="/IMG/pexels-lisa-fotios-1957478.jpg" class="d-block w-100" alt="b"/>
-      <div class="carousel-caption d-none d-sm-block">
-      </div>
-    </div>
-
-    <!-- Single item -->
-    <div class="carousel-item">
-      <img src="/IMG/pexels-mark-mccammon-2724749.jpg" class="d-block w-100" alt="c"/>
-      <div class="carousel-caption d-none d-sm-block">
-      </div>
-    </div>
-  </div>
-  <!-- Inner -->
-
-  <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<!-- Carousel wrapper -->
-
-    <!-- MDB -->
-    <script type="text/javascript" src="/mdb/js/mdb.min.js"></script>
-    <!-- Custom scripts -->
-    <script type="text/javascript"></script>
-
+<div>
     <h2 align="center">
       <p>
         Üdvözlöm az oldalunkon! 
@@ -137,6 +164,7 @@
         <td align="center"><p>Asztalos</p></td>
       </tr>
     </table>
+</div>
 
     <footer>
       <p><a href="mailto:hello@anrota.hu">hello@anrota.hu</a><br>
