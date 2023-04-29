@@ -6,7 +6,7 @@ head
 body
 {
 background-color: antiquewhite; 
-background-image: lenght: 100% , height:auto ;
+
 background-repeat: no-repeat;
 background-size:auto;
 }
@@ -144,7 +144,7 @@ footer {
   padding:0 8px
 }
 
-@media (min-width:601px){.col.m1{width:8.33333%}.col.m2{width:16.66666%}.col.m3,.quarter{width:24.99999%}.col.m4,.third{width:33.33333%}
+@media (min-width:601px){.col.m1{width:8.33333%}.col.m2{width:16.66666%}.col.m3,.quarter{width:24.99999%}.col.m4,.third{width:33.33333%}}
 
 #team {
   background-color: rgba(199, 165, 165, 0.589);
