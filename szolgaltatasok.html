@@ -1,50 +1,146 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Szolgáltatások</title>
-    <link rel="icon" type="image/x-icon" href="/IMG/favicon.ico">
-    <link rel="stylesheet" href="/mdb/css/mdb.min.css" />
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>AnRóta - Bútorda</title>
     <link rel="stylesheet" href="css/style.css">
+  </head>
 
-</head>
-<body style="background-image: url(img/pexels-pixabay-533157.jpg);">
-  
+  <body>
 
-    <header class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="d-none d-sm-block">AnRoTa Bútorda</h1>
-            </div>
-        </div>
-    </header>
-    <div id="navbar">
-      <img src="/IMG/logo.png" width="100px" height="100px" algin="left">
-      <a href="#default" id="logo">AnRoTa Bútorda</a>
+    <div id="navbar" class="">
+    <img src="/IMG/logo.png" width="150px" height="150px" align="left" class="img-fluid">
+      <a href="d" id="logo" class="font-effect-fire" >AnRóTa - Bútorda</a>
       <div id="navbar-right">
-        <a class="active" href="index.html">Kezdő oldal</a>
-        <a href="kapcsolat.html">Kapcsolat</a>
-        <a href="tervezo.html">Tervező</a>
+        <a href="index.html">Kezdő oldal</a>
+        <a class="active" href="tervezo.html">Tervező</a>
+        <a href="szolgaltatasok.html">Szolgáltatásaink</a>
+        <a href="webshop.html">WEBSHOP</a>
         <a href="doityourself.html">DIY</a>
+        <a href="kapcsolat.html">Kapcsolat</a>
       </div>
     </div>
-    <h2>
-      <p>
-        Üdvözlöm az oldalunkon!
-      </p>
-      <p>
-        blablablabla valami ilyesmi szöveg kell, hogy "ön megálmodja mi legyártjuk" és kérésére kiszállítjuk és
-        összeállítjuk az ön által lefoglat időpontban
-      </p>
-    </h2>
-
+    <br>
+    <br>
+    <br>
+    <br>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: rgba(179, 183, 183, 0.789);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    text-align: center;
+  }
+  .content {
+    margin: 5% auto;
+    padding: 0;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    overflow:hidden;
+    box-shadow: 20px hsl(0, 0%, 3%);
+    z-index: -1;
+  }
+  .show {
+    padding: 10%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    width: fit-content;
+  }
+  .letolt{
+    background-color: grey;
+    color: aquamarine;
+  }
+  .apro {
+    font-size: 10px;
+  }
+  .slide_content {
+    float: left;
+    width: 600px;
+    height: 300px;
+  }
+  .slides {
+    width: 2400px;
+    -webkit-animation-name: slide;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    /* -webkit-animation-direction: alternate; */
+    -webkit-animation-play-state: running;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .szolg {
+    
+  }
   
-    <footer>
-      <p>Készítették: Kovács Andrea, Varga Róbert, Pardi Tamás<br>
-        <a href="mailto:valaki@valami.hu">valaki@valami.hu</a>
-      </p>
+  
+  @keyframes slide {
+    20% {
+      margin-left: 0px;
+    }
+  
+    40% {
+      margin-left: calc(-200px * 1);
+    }
+  
+    60% {
+      margin-left: calc(-200px * 2);
+    }
+  
+    80% {
+      margin-left: calc(-200px * 3);
+    }
+   
+  
+ 
+  
+  }
+
+</style>
+<div>
+  <div class="szolg">
+    <ul>
+      <li>Bútor összeszerelés</li>
+      <li>Bútor gyártás</li>
+      <li>Bútor javítás</li>
+      <li>Tanácsadás</li>
+    </ul>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+    <footer><br>
+      <p><a href="mailto:hello@anrota.hu">hello@anrota.hu</a><br>
+        <br>
+      Anróta Kft. 2023. All rights reserved.</p>
     </footer>
-</body>
+
+  </body>
 </html>

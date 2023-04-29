@@ -78,9 +78,12 @@ color: black;
 .img-thumbnail{
   border: 1px;
 }
-    
+#navbar {
+  overflow: hidden;
+}
 #navbar a {
         float: left;
+        display: block;
         color: black;
         text-align: center;
         padding: 12px;
@@ -110,6 +113,7 @@ color: black;
 #navbar-right {
         float: right;
       }
+
     
 @media screen and (max-width: 300px) {
 #navbar {
@@ -128,7 +132,7 @@ color: black;
       }
     
 footer {
-        text-align: center;
+        width: 100%;
         padding: 3px;
         background-color: rgb(149, 52, 19);
         color: white;
@@ -153,4 +157,5 @@ text-align: center;
 .responsive {
   width: 100%;
   height: auto;
+  
 }

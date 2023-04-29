@@ -22,6 +22,10 @@
         <a href="kapcsolat.html">Kapcsolat</a>
       </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
 <style>
   * {
     margin: 0;
@@ -37,12 +41,10 @@
   .content {
     margin: 5% auto;
     padding: 0;
-    background-color: antiquewhite;
     border-radius: 10px;
-    height: 300px;
-    width: max-content;
-    overflow: hidden;
-    border: 1px saddlebrown solid;
+    height: auto;
+    width: auto;
+    overflow:hidden;
     box-shadow: 20px hsl(0, 0%, 3%);
     z-index: -1;
   }
@@ -71,22 +73,6 @@
     justify-content: center;
     align-items: center;
   }
-  .slide_content:nth-child(1) {
-    background: rgb(247, 173, 210);
-    z-index: 1;
-  }
-  
-  .slide_content:nth-child(2) {
-    background: hsl(108, 100%, 88%);
-  }
-  
-  .slide_content:nth-child(3) {
-    background: rgb(226, 192, 192);
-  }
-  
-  .slide_content:nth-child(4) {
-    background: rgb(236, 236, 149);
-  }
   
   @keyframes slide {
     20% {
@@ -94,17 +80,19 @@
     }
   
     40% {
-      margin-left: calc(-400px * 1);
+      margin-left: calc(-200px * 1);
     }
   
     60% {
-      margin-left: calc(-400px * 2);
+      margin-left: calc(-200px * 2);
     }
   
     80% {
-      margin-left: calc(-400px * 3);
+      margin-left: calc(-200px * 3);
     }
+  
   }
+
 </style>
 <div class="content">
   <div class="slides">
@@ -137,11 +125,13 @@
       <br>
 
     </h2>
-    <div class="table" id="team">
+    <div class="table" id="team" style="overflow-x:auto;">
     <h2 align="center">CSAPATUNK</h2>
     <p align="center">Ismerje meg a csapatot:</p>
-      
-    <table>
+    <table border="0" cellspacing="0" cellpadding="0" width="100%" height="100%">
+    <tr>
+    <td width="100%" height="100%" valign="middle" align="center">
+    <table >
       <tr>
         <th align="center"><img src="/IMG/man2.png" alt="Boss" style="width:25%" class="circle hover-opacity"></th>
         <th align="center"><img src="/IMG/wman.png" alt="Boss" style="width:25%" class="circle hover-opacity"></th>
@@ -157,6 +147,9 @@
         <td align="center"><p>Adminisztráció</p></td>
         <td align="center"><p>Asztalos</p></td>
       </tr>
+    </table>
+    </td>
+    </tr>
     </table>
 </div>
 
