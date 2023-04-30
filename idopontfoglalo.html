@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idopontfoglalas</title>
+    <link rel="icon" type="image/x-icon" href="/IMG/favicon.ico">
+    <link rel="stylesheet" href="/mdb/css/mdb.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="navbar">
+    <img src="/IMG/logo.png" width="100px" height="100px" align="left">
+    <a href="#default" id="logo">AnRoTa Bútorda</a>
+    <div id="navbar-right">
+      <a class="active" href="teszttamas.html">Kezdő oldal</a>
+      <a href="kapcsolat.html">Kapcsolat</a>
+      <a href="tervezo.html">Tervező</a>
+      <a href="doityourself.html">DIY</a>
+    </div>
+  </div>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="time">Preferred Time:</label>
+        <input type="time" id="time" name="time" required>
+        
+        <label for="location">Appointment Location:</label>
+        <input type="text" id="location" name="location" required>
+        
+        <input type="submit" value="Book Appointment">
+      </form>
+      <div id="map"></div>
+      
+      <script>
+        function initMap()
+         {
+            const map = new google.maps.Map(document.getElementById("map"),
+             {
+               center: { lat: -34.397, lng: 150.644 },
+                zoom: 8,
+             });
+  
+            const marker = new google.maps.Marker
+              (
+              {
+                position: { lat: -34.397, lng: 150.644 },
+                map: map,
+              }
+              );
+          }
+
+        const form = document.querySelector('form');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const dateInput = document.getElementById('date');
+        const timeInput = document.getElementById('time');
+        const locationInput = document.getElementById('location');
+
+        form.addEventListener('submit'), (e) => {
+          e.preventDefault()};
+          
+        // Send form data to server or store it in a database
+        console.log(`Name: ${nameInput.value}`);
+        console.log(`Email: ${emailInput.value}`);
+        console.log(`Date: ${dateInput.value}`);
+        console.log(`Time: ${timeInput.value}`);
+        console.log(`Location: ${locationInput.value}`);
+        
+        // Send confirmation email
+        const emailBody = 'Thank you for booking an appointment with us!' ;
+          'Here are your appointment';
+
+      </script>
+      <div>
+        <h2 align="center">
+          <p>
+            Üdvözlöm az oldalunkon! 
+          </p>
+          <p>
+            Ön megálmodja mi legyártjuk! Kérésére kiszállítjuk és összeállítjuk az ön által lefoglat időpontban.
+          </p>
+          <br>
+          <br>
+    
+        </h2>
+        <div class="table" id="team" style="overflow-x:auto;">
+        <h2 align="center">CSAPATUNK</h2>
+        <p align="center">Ismerje meg a csapatot:</p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%" height="100%">
+        <tr>
+        <td width="100%" height="100%" valign="middle" align="center">
+        <table >
+          <tr>
+            <th align="center"><img src="/IMG/man2.png" alt="Boss" style="width:25%" class="circle hover-opacity"></th>
+            <th align="center"><img src="/IMG/wman.png" alt="Boss" style="width:25%" class="circle hover-opacity"></th>
+            <th align="center"><img src="/IMG/man3.png" alt="Boss" style="width:25%" class="circle hover-opacity"></th>
+          </tr>
+          <tr>
+            <td align="center"><h3>Varga Róbert</h3></td>
+            <td align="center"><h3>Kovács Andrea</h3></td>
+            <td align="center"><h3>Pardi Tamás</h3></td>
+          </tr>
+          <tr>
+            <td align="center"><p>Asztalos</p></td>
+            <td align="center"><p>Adminisztráció</p></td>
+            <td align="center"><p>Asztalos</p></td>
+          </tr>
+        </table>
+        </td>
+        </tr>
+        </table>
+    </div>
+    
+        <footer>
+          <p><a href="mailto:hello@anrota.hu">hello@anrota.hu</a><br>
+            <br>
+          Anróta Kft. 2023. All rights reserved.</p>
+        </footer>
+</body>
+</html>
