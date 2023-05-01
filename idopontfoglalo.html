@@ -25,25 +25,32 @@
   </div>
   <br>
   <br>
-    <form align="center">
-        <label for="name">Teljes név:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Email cim:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="date">Kivánt dátum:</label>
-        <input type="date" id="date" name="date" required>
-        
-        <label for="time">Kivánt idő:</label>
-        <input type="time" id="time" name="time" required>
-        
-        <label for="location">A szerelési helyszin:</label>
-        <input type="text" id="location" name="location" required>
-        
-        <input type="submit" value="Foglalás kérése">
-      </form>
-      <div id="map"></div>
+  <table align="center">
+    <tr>
+      <th><label for="name">Teljes név:</label></th>
+      <th><label for="email">Email cim:</label></th>
+      <th><label for="date">Kivánt dátum:</label></th>
+      <th><label for="time">Kivánt idő:</label></th>
+      <th><label for="location">A szerelési helyszin:</label></th>
+      <th></th>
+
+      
+    </tr>
+    <tr>
+      <td> <input type="text" id="name" name="name" required></td>
+      <td> <input type="email" id="email" name="email" required></td>
+      <td> <input type="date" id="date" name="date" required></td>
+      <td> <input type="time" id="time" name="time" required></td>
+      <td> <input type="text" id="location" name="location" required></td>
+      
+    </tr>
+    <tr>
+      <td colspan="5" class="text-center"><input type="submit" value="Foglalás kérése"> <div id="map"></div> </td>
+    </tr>
+    
+  </table>
+   
+      
       <br>
       <br>
       
@@ -99,33 +106,7 @@
           <br>
     
         </h2>
-        <div class="table" id="team" style="overflow-x:auto;">
-        <h2 align="center">CSAPATUNK</h2>
-        <p align="center">Ismerje meg a csapatot:</p>
-        <table border="0" cellspacing="0" cellpadding="0" width="100%" height="100%">
-        <tr>
-        <td width="100%" height="100%" valign="middle" align="center">
-        <table >
-          <tr>
-            <th align="center"><img src="/IMG/man2.png" alt="Boss" style="width:25%" class="circle hover-opacity"></th>
-            <th align="center"><img src="/IMG/wman.png" alt="Boss" style="width:25%" class="circle hover-opacity"></th>
-            <th align="center"><img src="/IMG/man3.png" alt="Boss" style="width:25%" class="circle hover-opacity"></th>
-          </tr>
-          <tr>
-            <td align="center"><h3>Varga Róbert</h3></td>
-            <td align="center"><h3>Kovács Andrea</h3></td>
-            <td align="center"><h3>Pardi Tamás</h3></td>
-          </tr>
-          <tr>
-            <td align="center"><p>Asztalos</p></td>
-            <td align="center"><p>Adminisztráció</p></td>
-            <td align="center"><p>Asztalos</p></td>
-          </tr>
-        </table>
-        </td>
-        </tr>
-        </table>
-    </div>
+        
     
         <footer>
           <p><a href="mailto:hello@anrota.hu">hello@anrota.hu</a><br>
